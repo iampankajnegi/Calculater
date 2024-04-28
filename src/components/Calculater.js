@@ -14,7 +14,7 @@ const addToInput = (value) =>{
 
 const calculate = () =>{
   if (inputValue.trim() === '') {
-    setResult('Incomplete expression');
+    setResult('Error');
     return;
   }
 
