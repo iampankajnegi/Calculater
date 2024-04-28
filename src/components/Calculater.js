@@ -13,6 +13,12 @@ const addToInput = (value) =>{
 
 
 const calculate = () =>{
+  if (inputValue.trim() === '') {
+    setResult('Incomplete expression');
+    return;
+  }
+
+
 try {
       let resultValue = eval(inputValue);
 
@@ -21,7 +27,7 @@ try {
 
 catch(error){
 
-    setResult("Error")
+    setResult(error)
 
     
 }
